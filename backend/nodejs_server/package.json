@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "debug": "node index.js --debug"
+  },
+  "author": "anubhav sharma",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.30.0",
+    "mocha": "^10.2.0"
+  },
+  "keywords": [],
+  "description": "this is a server that host api and send data from mongo to main website."
+}

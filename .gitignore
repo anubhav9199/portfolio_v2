@@ -1,0 +1,12 @@
+.env
+db.sqlite3
+
+
+.dist/
+.vscode/
+*/__pycache__/
+backend/django_server/dsvenv/
+backend/django_server/*/*/__pycache__/
+backend/django_server/*/__pycache__/
+backend/fastapi_server/fasvenv/
+backend/nodejs_server/node_modules/
