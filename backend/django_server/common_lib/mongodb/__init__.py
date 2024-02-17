@@ -1,5 +1,5 @@
 
-from backend.django_server.django_server.settings import MONGO_CLIENT
+from django_server.django_server.settings import MONGO_CLIENT
 
 
 class ConnectWithMongo(object):

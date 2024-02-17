@@ -5,10 +5,23 @@ import (
 	"gin_server/routes"
 
 	"github.com/gin-gonic/gin"
+    "github.com/sirupsen/logrus"
 )
 
 func main() {
+    log := logrus.New()
+    log.SetLevel(logrus.DebugLevel)
+    
     router := gin.Default()
+
+    // adding logs
+    router.Use(func(c *gin.Context) {
+        log.WithFields(logrus.Fields{
+          "method": c.Request.Method,
+          "path":   c.Request.URL.Path,
+        }).Info("Received request")
+        c.Next()
+      })
 
     //run database
     configs.ConnectDB()
@@ -16,6 +29,6 @@ func main() {
     //routes
     routes.Route(router)
 
-    router.Run("localhost:6000")
+    router.Run("localhost:8002")
 }
 

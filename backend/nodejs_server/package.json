@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "debug": "node index.js --debug"
+    "start": "node src/index.js",
+    "debug": "node src/index.js --debug"
   },
   "author": "anubhav sharma",
   "license": "MIT",
