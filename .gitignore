@@ -6,7 +6,9 @@ db.sqlite3
 .vscode/
 */__pycache__/
 backend/django_server/dsvenv/
+backend/django_server/venv/
 backend/django_server/*/*/__pycache__/
 backend/django_server/*/__pycache__/
 backend/fastapi_server/fasvenv/
+backend/fastapi_server/venv/
 backend/nodejs_server/node_modules/

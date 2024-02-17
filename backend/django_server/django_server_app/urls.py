@@ -7,5 +7,9 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path('', include(router.urls)),
-    path("v1/resume_data/", views.Portfolio.as_view({"post": "get_resume_data"})),
+    path(
+        "api/v1/portfolio",
+        views.Portfolio.as_view(),
+        name="portfolio_data"
+    ),
 ]

@@ -1,6 +1,6 @@
-from backend.django_server.common_lib import mongo_params
-from backend.django_server.common_lib.mongo_utils import clean_data
-from backend.django_server.common_lib.mongodb import ConnectWithMongo
+from django_server.common_lib import mongo_params
+from django_server.common_lib.mongo_utils import clean_data
+from django_server.common_lib.mongodb import ConnectWithMongo
 
 
 class ResumeDataCollection:
